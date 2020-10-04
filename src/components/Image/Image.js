@@ -13,8 +13,8 @@ const fadeIn = keyframes`
 `;
 
 export default function ({ src, ...restProps }) {
-    const [imageURL, setImageURL] = useState("");
-    const [imageAnimation, setImageAnimation] = useState("none");
+    const [imageURL, setImageURL] = useState(`/${spinner}`);
+    const [imageAnimation, setImageAnimation] = useState(css`none`);
 
     useEffect(() => {
         let isMounted = true;
